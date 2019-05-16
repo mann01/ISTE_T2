@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" >
+	<title>Header</title>
+<link rel="stylesheet" type="text/css" href="style.css">	
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+  	$(window).on('scroll',function(){
+  		if($(window).scrollTop()){
+  			$('nav').addClass('black');
+  		}
+  		else
+  		{
+  			$('nav').removeClass('black'); 			
+  		}
+  		})
+  	$(document).ready(function(){
+  		$(".menu h4").click(function(){
+  			$("nav ul").toggleClass("active")
+  		})
+  	})
+
+  </script>
+</head>
+<body>
+	<div class="responsive-bar">
+	<div class="logo">
+	<img src="is.png">
+	</div>
+
+	<div class="menu">
+		<h4>Menu</h4>
+	</div>
+	</div>
+<nav>	
+	<div class="logo">
+	<img src="is.png">
+	</div>
+	<ul>
+		<li><a href="#" class="active">Home</a></li>
+	<li><a href="#">About</a></li>
+		<li><a href="#">Events</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Team</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	</nav>
+		
+<header style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(12.jpg);
+height: 99vh;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;">
+<div class="hero">
+		<h1 style=" font-size: 3.2vw;margin-top: 50px; ">  ISTE <br>Indian Society For Technical Education</h1>
+		<div class="button-awesome">			
+		<a href="" style="font-size: 2vw; " class ="btn btn-half">EVENTS</a>
+		<a href="" style="font-size: 2vw; " class ="btn btn-full">MORE</a>
+	</div>
+	</div>
+</header>
+</body>
+</html>
